@@ -76,22 +76,27 @@ public class EatWhatExceptionHandler {
     }
 
     private ExceptionBean setExceptionBean(int status, String error, String path) {
+        System.out.println(status);
         ExceptionBean exceptionBean = new ExceptionBean();
-        exceptionBean.setTimestamp(new Date().toString());
-        exceptionBean.setStatus(status);
-        exceptionBean.setError(error);
-        exceptionBean.setMessage("No message available");
-        exceptionBean.setPath(path);
         return exceptionBean;
+//        exceptionBean.setTimestamp(new Date().toString());
+//        exceptionBean.setStatus(status);
+//        exceptionBean.setError(error);
+//        exceptionBean.setMessage("No message available");
+//        exceptionBean.setPath(path);
+//        return exceptionBean;
     }
 
     private ExceptionBean setExceptionBean(int status, String error, String message, String path) {
+        System.out.println(status);
         ExceptionBean exceptionBean = new ExceptionBean();
-        exceptionBean.setTimestamp(new Date().toString());
-        exceptionBean.setStatus(status);
-        exceptionBean.setError(error);
-        exceptionBean.setMessage(message);
-        exceptionBean.setPath(path);
         return exceptionBean;
+//        ExceptionBean exceptionBean = new ExceptionBean();
+//        exceptionBean.setTimestamp(new Date().toString());
+//        exceptionBean.setStatus(status);
+//        exceptionBean.setError(error);
+//        exceptionBean.setMessage(message);
+//        exceptionBean.setPath(path);
+//        return exceptionBean;
     }
 }
