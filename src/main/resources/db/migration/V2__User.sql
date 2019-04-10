@@ -1,0 +1,12 @@
+use `eat_what`;
+
+-- 用户表
+CREATE TABLE IF NOT EXISTS  `user` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '名称',
+  `username` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '用户名',
+  `password` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '密码',
+  `create_time` BIGINT(20) NOT NULL DEFAULT 0 COMMENT '创建时间',
+  `update_time` BIGINT(20) NOT NULL DEFAULT 0 COMMENT '编辑时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=COMPACT COMMENT='用户表';
