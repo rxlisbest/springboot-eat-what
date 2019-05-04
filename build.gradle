@@ -35,4 +35,5 @@ dependencies {
     implementation 'com.auth0:java-jwt:3.8.0'
     compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '1.2.0.RELEASE'
     compile "org.flywaydb:flyway-core:5.2.4"
+    compile 'com.qiniu:qiniu-java-sdk:7.2.+'
 }
