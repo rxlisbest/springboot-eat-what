@@ -42,3 +42,8 @@ authorization:
 
 pagination:
   pageSize: 1
+
+qiniu:
+  accessKey: test1
+  secretKey: test1
+  bucket: test1
